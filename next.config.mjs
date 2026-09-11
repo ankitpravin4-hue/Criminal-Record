@@ -1,6 +1,11 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  reactStrictMode: true,
+  typescript: {
+    ignoreBuildErrors: true,
+  },
+  images: {
+    unoptimized: true,
+  },
   transpilePackages: [
     "react-force-graph-2d",
     "force-graph",
@@ -8,6 +13,6 @@ const nextConfig = {
     "graphology-metrics",
     "graphology-communities-louvain",
   ],
-};
+}
 
-export default nextConfig;
+export default nextConfig

@@ -1,0 +1,2062 @@
+{
+  "disclaimer": "CASE STUDY DATA — NOT REAL PERSONS. All names, phone numbers, locations, organizations, and events are synthetic fiction generated for a Smart India Hackathon prototype. They do not represent real people, real investigations, or real surveillance.",
+  "caseId": "GS-DEMO-2026-041",
+  "title": "Operation Tide Ledger (Synthetic)",
+  "generatedAt": "2026-09-11T18:53:05.020Z",
+  "entityCount": 55,
+  "relationCount": 132,
+  "entities": [
+    {
+      "id": "P001",
+      "type": "person",
+      "label": "Vikram Rao",
+      "subtitle": "Logistics coordinator",
+      "clusterHint": "harbor",
+      "meta": {
+        "role": "Coordinator",
+        "risk": "medium",
+        "notes": "SYNTHETIC. Dispatches yard crews for Meridian Freight."
+      }
+    },
+    {
+      "id": "P002",
+      "type": "person",
+      "label": "Neha Kulkarni",
+      "subtitle": "Night dispatcher",
+      "clusterHint": "harbor",
+      "meta": {
+        "role": "Dispatcher",
+        "risk": "low",
+        "notes": "SYNTHETIC. Shift lead at Mundra Yard-7."
+      }
+    },
+    {
+      "id": "P003",
+      "type": "person",
+      "label": "Farhan Qureshi",
+      "subtitle": "Fleet operator",
+      "clusterHint": "harbor",
+      "meta": {
+        "role": "Transport",
+        "risk": "medium",
+        "notes": "SYNTHETIC. Controls a 6-truck coastal run."
+      }
+    },
+    {
+      "id": "P004",
+      "type": "person",
+      "label": "Smit Patel",
+      "subtitle": "Bonded-shed clerk",
+      "clusterHint": "harbor",
+      "meta": {
+        "role": "Paperwork",
+        "risk": "high",
+        "notes": "SYNTHETIC. Access to Kandla shed manifests."
+      }
+    },
+    {
+      "id": "P005",
+      "type": "person",
+      "label": "Leela Nair",
+      "subtitle": "Warehouse supervisor",
+      "clusterHint": "harbor",
+      "meta": {
+        "role": "Warehouse",
+        "risk": "low",
+        "notes": "SYNTHETIC."
+      }
+    },
+    {
+      "id": "P006",
+      "type": "person",
+      "label": "Imran Sheikh",
+      "subtitle": "Crew lead",
+      "clusterHint": "harbor",
+      "meta": {
+        "role": "Labor",
+        "risk": "medium",
+        "notes": "SYNTHETIC."
+      }
+    },
+    {
+      "id": "P007",
+      "type": "person",
+      "label": "Kavita Deshmukh",
+      "subtitle": "Accounts",
+      "clusterHint": "harbor",
+      "meta": {
+        "role": "Finance",
+        "risk": "medium",
+        "notes": "SYNTHETIC. Books Tideway invoices."
+      }
+    },
+    {
+      "id": "P008",
+      "type": "person",
+      "label": "Rohan Iyer",
+      "subtitle": "Skipper",
+      "clusterHint": "harbor",
+      "meta": {
+        "role": "Vessel",
+        "risk": "medium",
+        "notes": "SYNTHETIC."
+      }
+    },
+    {
+      "id": "PH01",
+      "type": "phone",
+      "label": "+91 90000 11001",
+      "subtitle": "Handset — Rao",
+      "clusterHint": "harbor",
+      "meta": {
+        "imei": "SYN-IMEI-11001",
+        "carrier": "DemoTel"
+      }
+    },
+    {
+      "id": "PH02",
+      "type": "phone",
+      "label": "+91 90000 11002",
+      "subtitle": "Handset — Kulkarni",
+      "clusterHint": "harbor",
+      "meta": {
+        "imei": "SYN-IMEI-11002",
+        "carrier": "DemoTel"
+      }
+    },
+    {
+      "id": "PH03",
+      "type": "phone",
+      "label": "+91 90000 11003",
+      "subtitle": "Yard shared line",
+      "clusterHint": "harbor",
+      "meta": {
+        "imei": "SYN-IMEI-11003",
+        "carrier": "DemoTel"
+      }
+    },
+    {
+      "id": "PH04",
+      "type": "phone",
+      "label": "+91 90000 11004",
+      "subtitle": "Handset — Qureshi",
+      "clusterHint": "harbor",
+      "meta": {
+        "imei": "SYN-IMEI-11004",
+        "carrier": "CoastCom"
+      }
+    },
+    {
+      "id": "L01",
+      "type": "location",
+      "label": "Mundra Yard-7",
+      "subtitle": "Fictional bonded yard",
+      "clusterHint": "harbor",
+      "meta": {
+        "region": "Kutch (synthetic)",
+        "kind": "yard"
+      }
+    },
+    {
+      "id": "L02",
+      "type": "location",
+      "label": "Kandla Shed-12",
+      "subtitle": "Fictional customs shed",
+      "clusterHint": "harbor",
+      "meta": {
+        "region": "Kutch (synthetic)",
+        "kind": "shed"
+      }
+    },
+    {
+      "id": "L03",
+      "type": "location",
+      "label": "Dwarka Coastal Store",
+      "subtitle": "Fictional storehouse",
+      "clusterHint": "harbor",
+      "meta": {
+        "region": "Saurashtra (synthetic)",
+        "kind": "store"
+      }
+    },
+    {
+      "id": "O01",
+      "type": "organization",
+      "label": "Meridian Freight LLP",
+      "subtitle": "Shell logistics firm",
+      "clusterHint": "harbor",
+      "meta": {
+        "cin": "SYN-LLP-8841",
+        "status": "active"
+      }
+    },
+    {
+      "id": "O02",
+      "type": "organization",
+      "label": "Tideway Trading",
+      "subtitle": "Invoice vehicle",
+      "clusterHint": "harbor",
+      "meta": {
+        "cin": "SYN-PVT-2290",
+        "status": "active"
+      }
+    },
+    {
+      "id": "P010",
+      "type": "person",
+      "label": "Arjun Malhotra",
+      "subtitle": "Exchange desk",
+      "clusterHint": "remittance",
+      "meta": {
+        "role": "Desk lead",
+        "risk": "high",
+        "notes": "SYNTHETIC. Runs Lotus Exchange cash window."
+      }
+    },
+    {
+      "id": "P011",
+      "type": "person",
+      "label": "Priya Banerjee",
+      "subtitle": "Runner",
+      "clusterHint": "remittance",
+      "meta": {
+        "role": "Courier",
+        "risk": "medium",
+        "notes": "SYNTHETIC."
+      }
+    },
+    {
+      "id": "P012",
+      "type": "person",
+      "label": "Sameer Joshi",
+      "subtitle": "Accountant",
+      "clusterHint": "remittance",
+      "meta": {
+        "role": "Books",
+        "risk": "medium",
+        "notes": "SYNTHETIC."
+      }
+    },
+    {
+      "id": "P013",
+      "type": "person",
+      "label": "Tanvi Reddy",
+      "subtitle": "Cashier",
+      "clusterHint": "remittance",
+      "meta": {
+        "role": "Cash",
+        "risk": "low",
+        "notes": "SYNTHETIC."
+      }
+    },
+    {
+      "id": "P014",
+      "type": "person",
+      "label": "Harish Gupta",
+      "subtitle": "Field agent",
+      "clusterHint": "remittance",
+      "meta": {
+        "role": "Field",
+        "risk": "medium",
+        "notes": "SYNTHETIC."
+      }
+    },
+    {
+      "id": "P015",
+      "type": "person",
+      "label": "Meera Shah",
+      "subtitle": "Bookkeeper",
+      "clusterHint": "remittance",
+      "meta": {
+        "role": "Ledger",
+        "risk": "low",
+        "notes": "SYNTHETIC."
+      }
+    },
+    {
+      "id": "P016",
+      "type": "person",
+      "label": "Yusuf Khan",
+      "subtitle": "Night courier",
+      "clusterHint": "remittance",
+      "meta": {
+        "role": "Courier",
+        "risk": "medium",
+        "notes": "SYNTHETIC."
+      }
+    },
+    {
+      "id": "P017",
+      "type": "person",
+      "label": "Ananya Pillai",
+      "subtitle": "Compliance officer",
+      "clusterHint": "remittance",
+      "meta": {
+        "role": "Compliance",
+        "risk": "high",
+        "notes": "SYNTHETIC. Flags suppressed in the case file."
+      }
+    },
+    {
+      "id": "PH05",
+      "type": "phone",
+      "label": "+91 90000 22005",
+      "subtitle": "Handset — Malhotra",
+      "clusterHint": "remittance",
+      "meta": {
+        "imei": "SYN-IMEI-22005",
+        "carrier": "DemoTel"
+      }
+    },
+    {
+      "id": "PH06",
+      "type": "phone",
+      "label": "+91 90000 22006",
+      "subtitle": "Handset — Banerjee",
+      "clusterHint": "remittance",
+      "meta": {
+        "imei": "SYN-IMEI-22006",
+        "carrier": "DemoTel"
+      }
+    },
+    {
+      "id": "PH07",
+      "type": "phone",
+      "label": "+91 90000 22007",
+      "subtitle": "Desk shared line",
+      "clusterHint": "remittance",
+      "meta": {
+        "imei": "SYN-IMEI-22007",
+        "carrier": "InlandNet"
+      }
+    },
+    {
+      "id": "PH08",
+      "type": "phone",
+      "label": "+91 90000 22008",
+      "subtitle": "Handset — Gupta",
+      "clusterHint": "remittance",
+      "meta": {
+        "imei": "SYN-IMEI-22008",
+        "carrier": "InlandNet"
+      }
+    },
+    {
+      "id": "L04",
+      "type": "location",
+      "label": "Jaipur Old City Desk",
+      "subtitle": "Fictional cash window",
+      "clusterHint": "remittance",
+      "meta": {
+        "region": "Rajasthan (synthetic)",
+        "kind": "desk"
+      }
+    },
+    {
+      "id": "L05",
+      "type": "location",
+      "label": "Indore Cash Point",
+      "subtitle": "Fictional collection point",
+      "clusterHint": "remittance",
+      "meta": {
+        "region": "MP (synthetic)",
+        "kind": "cashpoint"
+      }
+    },
+    {
+      "id": "L06",
+      "type": "location",
+      "label": "Nagpur Transit Lodge",
+      "subtitle": "Fictional layover",
+      "clusterHint": "remittance",
+      "meta": {
+        "region": "Maharashtra (synthetic)",
+        "kind": "lodge"
+      }
+    },
+    {
+      "id": "O03",
+      "type": "organization",
+      "label": "Lotus Exchange Pvt Ltd",
+      "subtitle": "Unlicensed desk (synthetic)",
+      "clusterHint": "remittance",
+      "meta": {
+        "cin": "SYN-PVT-4412",
+        "status": "watch"
+      }
+    },
+    {
+      "id": "O04",
+      "type": "organization",
+      "label": "Saffron Ledger Co",
+      "subtitle": "Layering vehicle",
+      "clusterHint": "remittance",
+      "meta": {
+        "cin": "SYN-PVT-4418",
+        "status": "watch"
+      }
+    },
+    {
+      "id": "P020",
+      "type": "person",
+      "label": "Devika Menon",
+      "subtitle": "Director, Apex",
+      "clusterHint": "fronts",
+      "meta": {
+        "role": "Director",
+        "risk": "high",
+        "notes": "SYNTHETIC. Signatory on Apex Minerals."
+      }
+    },
+    {
+      "id": "P021",
+      "type": "person",
+      "label": "Kabir Anand",
+      "subtitle": "Northwind imports",
+      "clusterHint": "fronts",
+      "meta": {
+        "role": "Importer",
+        "risk": "medium",
+        "notes": "SYNTHETIC."
+      }
+    },
+    {
+      "id": "P022",
+      "type": "person",
+      "label": "Sana Fathima",
+      "subtitle": "Procurement",
+      "clusterHint": "fronts",
+      "meta": {
+        "role": "Buy desk",
+        "risk": "medium",
+        "notes": "SYNTHETIC."
+      }
+    },
+    {
+      "id": "P023",
+      "type": "person",
+      "label": "Nikhil Bose",
+      "subtitle": "Cedar Holdings",
+      "clusterHint": "fronts",
+      "meta": {
+        "role": "Holdings",
+        "risk": "high",
+        "notes": "SYNTHETIC."
+      }
+    },
+    {
+      "id": "P024",
+      "type": "person",
+      "label": "Pooja Verma",
+      "subtitle": "Invoice clerk",
+      "clusterHint": "fronts",
+      "meta": {
+        "role": "Paper",
+        "risk": "low",
+        "notes": "SYNTHETIC."
+      }
+    },
+    {
+      "id": "P025",
+      "type": "person",
+      "label": "Aditya Rao",
+      "subtitle": "Liaison",
+      "clusterHint": "fronts",
+      "meta": {
+        "role": "Liaison",
+        "risk": "medium",
+        "notes": "SYNTHETIC. Not related to Vikram Rao."
+      }
+    },
+    {
+      "id": "PH09",
+      "type": "phone",
+      "label": "+91 90000 33009",
+      "subtitle": "Handset — Menon",
+      "clusterHint": "fronts",
+      "meta": {
+        "imei": "SYN-IMEI-33009",
+        "carrier": "MetroLink"
+      }
+    },
+    {
+      "id": "PH10",
+      "type": "phone",
+      "label": "+91 90000 33010",
+      "subtitle": "Northwind office line",
+      "clusterHint": "fronts",
+      "meta": {
+        "imei": "SYN-IMEI-33010",
+        "carrier": "MetroLink"
+      }
+    },
+    {
+      "id": "PH11",
+      "type": "phone",
+      "label": "+91 90000 33011",
+      "subtitle": "Handset — Bose",
+      "clusterHint": "fronts",
+      "meta": {
+        "imei": "SYN-IMEI-33011",
+        "carrier": "MetroLink"
+      }
+    },
+    {
+      "id": "L07",
+      "type": "location",
+      "label": "Gurugram Serviced Office",
+      "subtitle": "Fictional registered office",
+      "clusterHint": "fronts",
+      "meta": {
+        "region": "NCR (synthetic)",
+        "kind": "office"
+      }
+    },
+    {
+      "id": "L08",
+      "type": "location",
+      "label": "Nhava Sheva Godown B",
+      "subtitle": "Fictional import godown",
+      "clusterHint": "fronts",
+      "meta": {
+        "region": "Raigad (synthetic)",
+        "kind": "godown"
+      }
+    },
+    {
+      "id": "O05",
+      "type": "organization",
+      "label": "Apex Minerals",
+      "subtitle": "Commodity front",
+      "clusterHint": "fronts",
+      "meta": {
+        "cin": "SYN-PVT-7701",
+        "status": "active"
+      }
+    },
+    {
+      "id": "O06",
+      "type": "organization",
+      "label": "Northwind Imports",
+      "subtitle": "Import front",
+      "clusterHint": "fronts",
+      "meta": {
+        "cin": "SYN-PVT-7708",
+        "status": "active"
+      }
+    },
+    {
+      "id": "O07",
+      "type": "organization",
+      "label": "Cedar Holdings",
+      "subtitle": "Holding company",
+      "clusterHint": "fronts",
+      "meta": {
+        "cin": "SYN-PVT-7715",
+        "status": "dormant"
+      }
+    },
+    {
+      "id": "P030",
+      "type": "person",
+      "label": "Karan Sethi",
+      "subtitle": "Independent consultant",
+      "clusterHint": "bridge",
+      "meta": {
+        "role": "Broker",
+        "risk": "critical",
+        "notes": "SYNTHETIC. Appears in all three clusters. Primary person of interest."
+      }
+    },
+    {
+      "id": "P031",
+      "type": "person",
+      "label": "Zara Hussain",
+      "subtitle": "Settlement mule",
+      "clusterHint": "bridge",
+      "meta": {
+        "role": "Mule",
+        "risk": "high",
+        "notes": "SYNTHETIC. Moves value between harbor invoices and inland desks."
+      }
+    },
+    {
+      "id": "P032",
+      "type": "person",
+      "label": "Rakesh Nanda",
+      "subtitle": "Counsel / fixer",
+      "clusterHint": "bridge",
+      "meta": {
+        "role": "Fixer",
+        "risk": "high",
+        "notes": "SYNTHETIC. Connects remittance books to front-company filings."
+      }
+    },
+    {
+      "id": "PH99",
+      "type": "phone",
+      "label": "+91 90000 99999",
+      "subtitle": "Burner (shared)",
+      "clusterHint": "bridge",
+      "meta": {
+        "imei": "SYN-IMEI-99999",
+        "carrier": "Prepaid-X",
+        "notes": "SYNTHETIC. Handed between harbor crew and Apex office."
+      }
+    },
+    {
+      "id": "L09",
+      "type": "location",
+      "label": "Ahmedabad Meeting Cafe",
+      "subtitle": "Fictional meetup",
+      "clusterHint": "bridge",
+      "meta": {
+        "region": "Gujarat (synthetic)",
+        "kind": "meetup"
+      }
+    },
+    {
+      "id": "L99",
+      "type": "location",
+      "label": "Silent Jetty",
+      "subtitle": "Fictional unlisted berth",
+      "clusterHint": "bridge",
+      "meta": {
+        "region": "Gulf of Kutch (synthetic)",
+        "kind": "jetty"
+      }
+    },
+    {
+      "id": "O08",
+      "type": "organization",
+      "label": "Pinnacle Advisory",
+      "subtitle": "Sethi's letterhead",
+      "clusterHint": "bridge",
+      "meta": {
+        "cin": "SYN-LLP-0100",
+        "status": "active"
+      }
+    }
+  ],
+  "relations": [
+    {
+      "id": "E001",
+      "source": "P001",
+      "target": "PH01",
+      "type": "call",
+      "timestamp": "2026-02-02T08:14:00.000Z",
+      "meta": {
+        "note": "Registered handset (synthetic)",
+        "durationSec": 12
+      }
+    },
+    {
+      "id": "E002",
+      "source": "P002",
+      "target": "PH02",
+      "type": "call",
+      "timestamp": "2026-02-02T08:14:00.000Z",
+      "meta": {
+        "note": "Registered handset (synthetic)",
+        "durationSec": 12
+      }
+    },
+    {
+      "id": "E003",
+      "source": "P003",
+      "target": "PH04",
+      "type": "call",
+      "timestamp": "2026-02-02T08:14:00.000Z",
+      "meta": {
+        "note": "Registered handset (synthetic)",
+        "durationSec": 12
+      }
+    },
+    {
+      "id": "E004",
+      "source": "P010",
+      "target": "PH05",
+      "type": "call",
+      "timestamp": "2026-02-03T08:21:00.000Z",
+      "meta": {
+        "note": "Registered handset (synthetic)",
+        "durationSec": 12
+      }
+    },
+    {
+      "id": "E005",
+      "source": "P011",
+      "target": "PH06",
+      "type": "call",
+      "timestamp": "2026-02-03T08:21:00.000Z",
+      "meta": {
+        "note": "Registered handset (synthetic)",
+        "durationSec": 12
+      }
+    },
+    {
+      "id": "E006",
+      "source": "P014",
+      "target": "PH08",
+      "type": "call",
+      "timestamp": "2026-02-03T08:21:00.000Z",
+      "meta": {
+        "note": "Registered handset (synthetic)",
+        "durationSec": 12
+      }
+    },
+    {
+      "id": "E007",
+      "source": "P020",
+      "target": "PH09",
+      "type": "call",
+      "timestamp": "2026-02-04T08:28:00.000Z",
+      "meta": {
+        "note": "Registered handset (synthetic)",
+        "durationSec": 12
+      }
+    },
+    {
+      "id": "E008",
+      "source": "P021",
+      "target": "PH10",
+      "type": "call",
+      "timestamp": "2026-02-04T08:28:00.000Z",
+      "meta": {
+        "note": "Registered handset (synthetic)",
+        "durationSec": 12
+      }
+    },
+    {
+      "id": "E009",
+      "source": "P023",
+      "target": "PH11",
+      "type": "call",
+      "timestamp": "2026-02-04T08:28:00.000Z",
+      "meta": {
+        "note": "Registered handset (synthetic)",
+        "durationSec": 12
+      }
+    },
+    {
+      "id": "E010",
+      "source": "P030",
+      "target": "PH99",
+      "type": "call",
+      "timestamp": "2026-02-05T08:35:00.000Z",
+      "meta": {
+        "note": "Registered handset (synthetic)",
+        "durationSec": 12
+      }
+    },
+    {
+      "id": "E011",
+      "source": "P005",
+      "target": "PH03",
+      "type": "call",
+      "timestamp": "2026-02-06T09:42:00.000Z",
+      "meta": {
+        "durationSec": 180
+      }
+    },
+    {
+      "id": "E012",
+      "source": "P006",
+      "target": "PH03",
+      "type": "call",
+      "timestamp": "2026-02-06T10:42:00.000Z",
+      "meta": {
+        "durationSec": 90
+      }
+    },
+    {
+      "id": "E013",
+      "source": "P012",
+      "target": "PH07",
+      "type": "call",
+      "timestamp": "2026-02-07T11:49:00.000Z",
+      "meta": {
+        "durationSec": 240
+      }
+    },
+    {
+      "id": "E014",
+      "source": "P013",
+      "target": "PH07",
+      "type": "call",
+      "timestamp": "2026-02-07T12:49:00.000Z",
+      "meta": {
+        "durationSec": 60
+      }
+    },
+    {
+      "id": "E015",
+      "source": "P015",
+      "target": "PH07",
+      "type": "call",
+      "timestamp": "2026-02-07T13:49:00.000Z",
+      "meta": {
+        "durationSec": 75
+      }
+    },
+    {
+      "id": "E016",
+      "source": "P001",
+      "target": "P002",
+      "type": "call",
+      "timestamp": "2026-02-08T09:56:00.000Z",
+      "meta": {
+        "durationSec": 420
+      }
+    },
+    {
+      "id": "E017",
+      "source": "P001",
+      "target": "P003",
+      "type": "call",
+      "timestamp": "2026-02-08T10:56:00.000Z",
+      "meta": {
+        "durationSec": 300
+      }
+    },
+    {
+      "id": "E018",
+      "source": "P001",
+      "target": "P005",
+      "type": "call",
+      "timestamp": "2026-02-08T14:56:00.000Z",
+      "meta": {
+        "durationSec": 180
+      }
+    },
+    {
+      "id": "E019",
+      "source": "P002",
+      "target": "P006",
+      "type": "call",
+      "timestamp": "2026-02-09T02:03:00.000Z",
+      "meta": {
+        "durationSec": 95
+      }
+    },
+    {
+      "id": "E020",
+      "source": "P003",
+      "target": "P008",
+      "type": "call",
+      "timestamp": "2026-02-09T04:03:00.000Z",
+      "meta": {
+        "durationSec": 610
+      }
+    },
+    {
+      "id": "E021",
+      "source": "P004",
+      "target": "P001",
+      "type": "call",
+      "timestamp": "2026-02-09T16:03:00.000Z",
+      "meta": {
+        "durationSec": 200
+      }
+    },
+    {
+      "id": "E022",
+      "source": "P004",
+      "target": "P007",
+      "type": "call",
+      "timestamp": "2026-02-10T11:10:00.000Z",
+      "meta": {
+        "durationSec": 150
+      }
+    },
+    {
+      "id": "E023",
+      "source": "P007",
+      "target": "P005",
+      "type": "call",
+      "timestamp": "2026-02-10T12:10:00.000Z",
+      "meta": {
+        "durationSec": 80
+      }
+    },
+    {
+      "id": "E024",
+      "source": "P006",
+      "target": "P008",
+      "type": "call",
+      "timestamp": "2026-02-10T22:10:00.000Z",
+      "meta": {
+        "durationSec": 45
+      }
+    },
+    {
+      "id": "E025",
+      "source": "P002",
+      "target": "P003",
+      "type": "call",
+      "timestamp": "2026-02-11T07:17:00.000Z",
+      "meta": {
+        "durationSec": 130
+      }
+    },
+    {
+      "id": "E026",
+      "source": "P001",
+      "target": "P007",
+      "type": "family",
+      "timestamp": "2026-02-01T00:07:00.000Z",
+      "meta": {
+        "relation": "cousin (synthetic)"
+      }
+    },
+    {
+      "id": "E027",
+      "source": "P004",
+      "target": "P008",
+      "type": "family",
+      "timestamp": "2026-02-01T00:07:00.000Z",
+      "meta": {
+        "relation": "brother-in-law (synthetic)"
+      }
+    },
+    {
+      "id": "E028",
+      "source": "P001",
+      "target": "O01",
+      "type": "co-location",
+      "timestamp": "2026-02-12T10:24:00.000Z",
+      "meta": {
+        "role": "operations lead"
+      }
+    },
+    {
+      "id": "E029",
+      "source": "P007",
+      "target": "O02",
+      "type": "transaction",
+      "timestamp": "2026-02-12T15:24:00.000Z",
+      "meta": {
+        "amountInr": 480000,
+        "note": "invoice batch"
+      }
+    },
+    {
+      "id": "E030",
+      "source": "P007",
+      "target": "O01",
+      "type": "transaction",
+      "timestamp": "2026-02-13T11:31:00.000Z",
+      "meta": {
+        "amountInr": 265000,
+        "note": "crew payout"
+      }
+    },
+    {
+      "id": "E031",
+      "source": "P003",
+      "target": "O01",
+      "type": "co-location",
+      "timestamp": "2026-02-13T08:31:00.000Z",
+      "meta": {
+        "role": "contractor"
+      }
+    },
+    {
+      "id": "E032",
+      "source": "P001",
+      "target": "L01",
+      "type": "co-location",
+      "timestamp": "2026-02-14T06:38:00.000Z",
+      "meta": {
+        "visits": 18
+      }
+    },
+    {
+      "id": "E033",
+      "source": "P002",
+      "target": "L01",
+      "type": "co-location",
+      "timestamp": "2026-02-14T06:38:00.000Z",
+      "meta": {
+        "visits": 22
+      }
+    },
+    {
+      "id": "E034",
+      "source": "P005",
+      "target": "L01",
+      "type": "co-location",
+      "timestamp": "2026-02-14T07:38:00.000Z",
+      "meta": {
+        "visits": 30
+      }
+    },
+    {
+      "id": "E035",
+      "source": "P006",
+      "target": "L01",
+      "type": "co-location",
+      "timestamp": "2026-02-14T07:38:00.000Z",
+      "meta": {
+        "visits": 16
+      }
+    },
+    {
+      "id": "E036",
+      "source": "P004",
+      "target": "L02",
+      "type": "co-location",
+      "timestamp": "2026-02-15T09:45:00.000Z",
+      "meta": {
+        "visits": 11
+      }
+    },
+    {
+      "id": "E037",
+      "source": "P001",
+      "target": "L02",
+      "type": "co-location",
+      "timestamp": "2026-02-15T10:45:00.000Z",
+      "meta": {
+        "visits": 4
+      }
+    },
+    {
+      "id": "E038",
+      "source": "P008",
+      "target": "L03",
+      "type": "co-location",
+      "timestamp": "2026-02-16T03:52:00.000Z",
+      "meta": {
+        "visits": 7
+      }
+    },
+    {
+      "id": "E039",
+      "source": "P006",
+      "target": "L03",
+      "type": "co-location",
+      "timestamp": "2026-02-16T04:52:00.000Z",
+      "meta": {
+        "visits": 5
+      }
+    },
+    {
+      "id": "E040",
+      "source": "O01",
+      "target": "L01",
+      "type": "co-location",
+      "timestamp": "2026-02-12T00:24:00.000Z",
+      "meta": {
+        "role": "registered yard"
+      }
+    },
+    {
+      "id": "E041",
+      "source": "O02",
+      "target": "L02",
+      "type": "co-location",
+      "timestamp": "2026-02-12T00:24:00.000Z",
+      "meta": {
+        "role": "billing address"
+      }
+    },
+    {
+      "id": "E042",
+      "source": "P010",
+      "target": "P011",
+      "type": "call",
+      "timestamp": "2026-02-08T18:56:00.000Z",
+      "meta": {
+        "durationSec": 200
+      }
+    },
+    {
+      "id": "E043",
+      "source": "P010",
+      "target": "P012",
+      "type": "call",
+      "timestamp": "2026-02-08T19:56:00.000Z",
+      "meta": {
+        "durationSec": 540
+      }
+    },
+    {
+      "id": "E044",
+      "source": "P010",
+      "target": "P013",
+      "type": "call",
+      "timestamp": "2026-02-09T09:03:00.000Z",
+      "meta": {
+        "durationSec": 90
+      }
+    },
+    {
+      "id": "E045",
+      "source": "P011",
+      "target": "P016",
+      "type": "call",
+      "timestamp": "2026-02-09T21:03:00.000Z",
+      "meta": {
+        "durationSec": 70
+      }
+    },
+    {
+      "id": "E046",
+      "source": "P014",
+      "target": "P010",
+      "type": "call",
+      "timestamp": "2026-02-10T08:10:00.000Z",
+      "meta": {
+        "durationSec": 260
+      }
+    },
+    {
+      "id": "E047",
+      "source": "P014",
+      "target": "P016",
+      "type": "call",
+      "timestamp": "2026-02-10T20:10:00.000Z",
+      "meta": {
+        "durationSec": 110
+      }
+    },
+    {
+      "id": "E048",
+      "source": "P015",
+      "target": "P012",
+      "type": "call",
+      "timestamp": "2026-02-11T11:17:00.000Z",
+      "meta": {
+        "durationSec": 300
+      }
+    },
+    {
+      "id": "E049",
+      "source": "P017",
+      "target": "P010",
+      "type": "call",
+      "timestamp": "2026-02-11T16:17:00.000Z",
+      "meta": {
+        "durationSec": 480
+      }
+    },
+    {
+      "id": "E050",
+      "source": "P017",
+      "target": "P012",
+      "type": "call",
+      "timestamp": "2026-02-12T10:24:00.000Z",
+      "meta": {
+        "durationSec": 190
+      }
+    },
+    {
+      "id": "E051",
+      "source": "P013",
+      "target": "P015",
+      "type": "call",
+      "timestamp": "2026-02-12T14:24:00.000Z",
+      "meta": {
+        "durationSec": 55
+      }
+    },
+    {
+      "id": "E052",
+      "source": "P011",
+      "target": "P014",
+      "type": "call",
+      "timestamp": "2026-02-13T19:31:00.000Z",
+      "meta": {
+        "durationSec": 88
+      }
+    },
+    {
+      "id": "E053",
+      "source": "P011",
+      "target": "P016",
+      "type": "family",
+      "timestamp": "2026-02-01T00:07:00.000Z",
+      "meta": {
+        "relation": "siblings (synthetic)"
+      }
+    },
+    {
+      "id": "E054",
+      "source": "P010",
+      "target": "O03",
+      "type": "co-location",
+      "timestamp": "2026-02-12T09:24:00.000Z",
+      "meta": {
+        "role": "desk lead"
+      }
+    },
+    {
+      "id": "E055",
+      "source": "P012",
+      "target": "O04",
+      "type": "co-location",
+      "timestamp": "2026-02-12T09:24:00.000Z",
+      "meta": {
+        "role": "books"
+      }
+    },
+    {
+      "id": "E056",
+      "source": "P017",
+      "target": "O03",
+      "type": "co-location",
+      "timestamp": "2026-02-12T09:24:00.000Z",
+      "meta": {
+        "role": "compliance"
+      }
+    },
+    {
+      "id": "E057",
+      "source": "P010",
+      "target": "L04",
+      "type": "co-location",
+      "timestamp": "2026-02-14T10:38:00.000Z",
+      "meta": {
+        "visits": 20
+      }
+    },
+    {
+      "id": "E058",
+      "source": "P013",
+      "target": "L04",
+      "type": "co-location",
+      "timestamp": "2026-02-14T10:38:00.000Z",
+      "meta": {
+        "visits": 20
+      }
+    },
+    {
+      "id": "E059",
+      "source": "P015",
+      "target": "L04",
+      "type": "co-location",
+      "timestamp": "2026-02-14T11:38:00.000Z",
+      "meta": {
+        "visits": 14
+      }
+    },
+    {
+      "id": "E060",
+      "source": "P011",
+      "target": "L05",
+      "type": "co-location",
+      "timestamp": "2026-02-15T17:45:00.000Z",
+      "meta": {
+        "visits": 9
+      }
+    },
+    {
+      "id": "E061",
+      "source": "P014",
+      "target": "L05",
+      "type": "co-location",
+      "timestamp": "2026-02-15T18:45:00.000Z",
+      "meta": {
+        "visits": 8
+      }
+    },
+    {
+      "id": "E062",
+      "source": "P016",
+      "target": "L06",
+      "type": "co-location",
+      "timestamp": "2026-02-16T01:52:00.000Z",
+      "meta": {
+        "visits": 6
+      }
+    },
+    {
+      "id": "E063",
+      "source": "P014",
+      "target": "L06",
+      "type": "co-location",
+      "timestamp": "2026-02-16T02:52:00.000Z",
+      "meta": {
+        "visits": 4
+      }
+    },
+    {
+      "id": "E064",
+      "source": "P010",
+      "target": "O03",
+      "type": "transaction",
+      "timestamp": "2026-02-17T12:59:00.000Z",
+      "meta": {
+        "amountInr": 1250000,
+        "note": "desk float"
+      }
+    },
+    {
+      "id": "E065",
+      "source": "P012",
+      "target": "O04",
+      "type": "transaction",
+      "timestamp": "2026-02-17T13:59:00.000Z",
+      "meta": {
+        "amountInr": 890000,
+        "note": "layering"
+      }
+    },
+    {
+      "id": "E066",
+      "source": "P013",
+      "target": "O03",
+      "type": "transaction",
+      "timestamp": "2026-02-18T09:06:00.000Z",
+      "meta": {
+        "amountInr": 150000,
+        "note": "cash-in"
+      }
+    },
+    {
+      "id": "E067",
+      "source": "P011",
+      "target": "O04",
+      "type": "transaction",
+      "timestamp": "2026-02-18T21:06:00.000Z",
+      "meta": {
+        "amountInr": 210000,
+        "note": "runner drop"
+      }
+    },
+    {
+      "id": "E068",
+      "source": "P016",
+      "target": "O04",
+      "type": "transaction",
+      "timestamp": "2026-02-19T03:13:00.000Z",
+      "meta": {
+        "amountInr": 175000,
+        "note": "night drop"
+      }
+    },
+    {
+      "id": "E069",
+      "source": "O03",
+      "target": "L04",
+      "type": "co-location",
+      "timestamp": "2026-02-12T00:24:00.000Z",
+      "meta": {
+        "role": "principal desk"
+      }
+    },
+    {
+      "id": "E070",
+      "source": "O04",
+      "target": "L05",
+      "type": "co-location",
+      "timestamp": "2026-02-12T00:24:00.000Z",
+      "meta": {
+        "role": "collection"
+      }
+    },
+    {
+      "id": "E071",
+      "source": "P020",
+      "target": "P021",
+      "type": "call",
+      "timestamp": "2026-02-08T11:56:00.000Z",
+      "meta": {
+        "durationSec": 340
+      }
+    },
+    {
+      "id": "E072",
+      "source": "P020",
+      "target": "P023",
+      "type": "call",
+      "timestamp": "2026-02-08T15:56:00.000Z",
+      "meta": {
+        "durationSec": 410
+      }
+    },
+    {
+      "id": "E073",
+      "source": "P020",
+      "target": "P024",
+      "type": "call",
+      "timestamp": "2026-02-09T10:03:00.000Z",
+      "meta": {
+        "durationSec": 120
+      }
+    },
+    {
+      "id": "E074",
+      "source": "P021",
+      "target": "P022",
+      "type": "call",
+      "timestamp": "2026-02-09T13:03:00.000Z",
+      "meta": {
+        "durationSec": 200
+      }
+    },
+    {
+      "id": "E075",
+      "source": "P023",
+      "target": "P025",
+      "type": "call",
+      "timestamp": "2026-02-10T09:10:00.000Z",
+      "meta": {
+        "durationSec": 160
+      }
+    },
+    {
+      "id": "E076",
+      "source": "P022",
+      "target": "P024",
+      "type": "call",
+      "timestamp": "2026-02-10T16:10:00.000Z",
+      "meta": {
+        "durationSec": 95
+      }
+    },
+    {
+      "id": "E077",
+      "source": "P021",
+      "target": "P025",
+      "type": "call",
+      "timestamp": "2026-02-11T12:17:00.000Z",
+      "meta": {
+        "durationSec": 70
+      }
+    },
+    {
+      "id": "E078",
+      "source": "P023",
+      "target": "P022",
+      "type": "call",
+      "timestamp": "2026-02-12T18:24:00.000Z",
+      "meta": {
+        "durationSec": 250
+      }
+    },
+    {
+      "id": "E079",
+      "source": "P020",
+      "target": "O05",
+      "type": "co-location",
+      "timestamp": "2026-02-12T09:24:00.000Z",
+      "meta": {
+        "role": "director"
+      }
+    },
+    {
+      "id": "E080",
+      "source": "P021",
+      "target": "O06",
+      "type": "co-location",
+      "timestamp": "2026-02-12T09:24:00.000Z",
+      "meta": {
+        "role": "proprietor"
+      }
+    },
+    {
+      "id": "E081",
+      "source": "P023",
+      "target": "O07",
+      "type": "co-location",
+      "timestamp": "2026-02-12T09:24:00.000Z",
+      "meta": {
+        "role": "director"
+      }
+    },
+    {
+      "id": "E082",
+      "source": "P024",
+      "target": "O05",
+      "type": "co-location",
+      "timestamp": "2026-02-13T10:31:00.000Z",
+      "meta": {
+        "role": "clerk"
+      }
+    },
+    {
+      "id": "E083",
+      "source": "P022",
+      "target": "O06",
+      "type": "co-location",
+      "timestamp": "2026-02-13T11:31:00.000Z",
+      "meta": {
+        "role": "buy desk"
+      }
+    },
+    {
+      "id": "E084",
+      "source": "P020",
+      "target": "L07",
+      "type": "co-location",
+      "timestamp": "2026-02-14T09:38:00.000Z",
+      "meta": {
+        "visits": 12
+      }
+    },
+    {
+      "id": "E085",
+      "source": "P024",
+      "target": "L07",
+      "type": "co-location",
+      "timestamp": "2026-02-14T09:38:00.000Z",
+      "meta": {
+        "visits": 18
+      }
+    },
+    {
+      "id": "E086",
+      "source": "P023",
+      "target": "L07",
+      "type": "co-location",
+      "timestamp": "2026-02-14T10:38:00.000Z",
+      "meta": {
+        "visits": 6
+      }
+    },
+    {
+      "id": "E087",
+      "source": "P021",
+      "target": "L08",
+      "type": "co-location",
+      "timestamp": "2026-02-15T08:45:00.000Z",
+      "meta": {
+        "visits": 9
+      }
+    },
+    {
+      "id": "E088",
+      "source": "P025",
+      "target": "L08",
+      "type": "co-location",
+      "timestamp": "2026-02-15T08:45:00.000Z",
+      "meta": {
+        "visits": 7
+      }
+    },
+    {
+      "id": "E089",
+      "source": "P022",
+      "target": "L08",
+      "type": "co-location",
+      "timestamp": "2026-02-15T09:45:00.000Z",
+      "meta": {
+        "visits": 5
+      }
+    },
+    {
+      "id": "E090",
+      "source": "P020",
+      "target": "O05",
+      "type": "transaction",
+      "timestamp": "2026-02-17T10:59:00.000Z",
+      "meta": {
+        "amountInr": 2400000,
+        "note": "director draw"
+      }
+    },
+    {
+      "id": "E091",
+      "source": "P021",
+      "target": "O06",
+      "type": "transaction",
+      "timestamp": "2026-02-17T14:59:00.000Z",
+      "meta": {
+        "amountInr": 980000,
+        "note": "import LC"
+      }
+    },
+    {
+      "id": "E092",
+      "source": "P023",
+      "target": "O07",
+      "type": "transaction",
+      "timestamp": "2026-02-18T11:06:00.000Z",
+      "meta": {
+        "amountInr": 3100000,
+        "note": "holding transfer"
+      }
+    },
+    {
+      "id": "E093",
+      "source": "P024",
+      "target": "O07",
+      "type": "transaction",
+      "timestamp": "2026-02-19T10:13:00.000Z",
+      "meta": {
+        "amountInr": 420000,
+        "note": "invoice set"
+      }
+    },
+    {
+      "id": "E094",
+      "source": "O05",
+      "target": "L07",
+      "type": "co-location",
+      "timestamp": "2026-02-12T00:24:00.000Z",
+      "meta": {
+        "role": "registered office"
+      }
+    },
+    {
+      "id": "E095",
+      "source": "O06",
+      "target": "L08",
+      "type": "co-location",
+      "timestamp": "2026-02-12T00:24:00.000Z",
+      "meta": {
+        "role": "godown"
+      }
+    },
+    {
+      "id": "E096",
+      "source": "P030",
+      "target": "P001",
+      "type": "call",
+      "timestamp": "2026-02-20T07:20:00.000Z",
+      "meta": {
+        "durationSec": 680,
+        "note": "harbor coordination"
+      }
+    },
+    {
+      "id": "E097",
+      "source": "P030",
+      "target": "P010",
+      "type": "call",
+      "timestamp": "2026-02-20T08:20:00.000Z",
+      "meta": {
+        "durationSec": 520,
+        "note": "settlement window"
+      }
+    },
+    {
+      "id": "E098",
+      "source": "P030",
+      "target": "P020",
+      "type": "call",
+      "timestamp": "2026-02-20T09:20:00.000Z",
+      "meta": {
+        "durationSec": 740,
+        "note": "front-company cover"
+      }
+    },
+    {
+      "id": "E099",
+      "source": "P030",
+      "target": "P023",
+      "type": "call",
+      "timestamp": "2026-02-21T11:27:00.000Z",
+      "meta": {
+        "durationSec": 300
+      }
+    },
+    {
+      "id": "E100",
+      "source": "P030",
+      "target": "P004",
+      "type": "call",
+      "timestamp": "2026-02-21T22:27:00.000Z",
+      "meta": {
+        "durationSec": 140,
+        "note": "manifest timing"
+      }
+    },
+    {
+      "id": "E101",
+      "source": "P030",
+      "target": "O08",
+      "type": "co-location",
+      "timestamp": "2026-02-12T09:24:00.000Z",
+      "meta": {
+        "role": "principal"
+      }
+    },
+    {
+      "id": "E102",
+      "source": "P030",
+      "target": "L09",
+      "type": "co-location",
+      "timestamp": "2026-02-22T16:34:00.000Z",
+      "meta": {
+        "visits": 5
+      }
+    },
+    {
+      "id": "E103",
+      "source": "P030",
+      "target": "L99",
+      "type": "co-location",
+      "timestamp": "2026-02-23T02:41:00.000Z",
+      "meta": {
+        "visits": 3
+      }
+    },
+    {
+      "id": "E104",
+      "source": "P030",
+      "target": "O03",
+      "type": "transaction",
+      "timestamp": "2026-02-24T10:48:00.000Z",
+      "meta": {
+        "amountInr": 750000,
+        "note": "advisory fee"
+      }
+    },
+    {
+      "id": "E105",
+      "source": "P030",
+      "target": "O05",
+      "type": "transaction",
+      "timestamp": "2026-02-24T14:48:00.000Z",
+      "meta": {
+        "amountInr": 1800000,
+        "note": "consulting"
+      }
+    },
+    {
+      "id": "E106",
+      "source": "P030",
+      "target": "O01",
+      "type": "transaction",
+      "timestamp": "2026-02-25T09:55:00.000Z",
+      "meta": {
+        "amountInr": 620000,
+        "note": "retainers"
+      }
+    },
+    {
+      "id": "E107",
+      "source": "P031",
+      "target": "P007",
+      "type": "call",
+      "timestamp": "2026-02-20T18:20:00.000Z",
+      "meta": {
+        "durationSec": 210
+      }
+    },
+    {
+      "id": "E108",
+      "source": "P031",
+      "target": "P010",
+      "type": "call",
+      "timestamp": "2026-02-20T19:20:00.000Z",
+      "meta": {
+        "durationSec": 260
+      }
+    },
+    {
+      "id": "E109",
+      "source": "P031",
+      "target": "P012",
+      "type": "call",
+      "timestamp": "2026-02-21T10:27:00.000Z",
+      "meta": {
+        "durationSec": 180
+      }
+    },
+    {
+      "id": "E110",
+      "source": "P031",
+      "target": "P001",
+      "type": "call",
+      "timestamp": "2026-02-22T06:34:00.000Z",
+      "meta": {
+        "durationSec": 90
+      }
+    },
+    {
+      "id": "E111",
+      "source": "P031",
+      "target": "O02",
+      "type": "transaction",
+      "timestamp": "2026-02-24T11:48:00.000Z",
+      "meta": {
+        "amountInr": 390000,
+        "note": "Tideway payout"
+      }
+    },
+    {
+      "id": "E112",
+      "source": "P031",
+      "target": "O03",
+      "type": "transaction",
+      "timestamp": "2026-02-24T20:48:00.000Z",
+      "meta": {
+        "amountInr": 385000,
+        "note": "desk deposit"
+      }
+    },
+    {
+      "id": "E113",
+      "source": "P031",
+      "target": "O04",
+      "type": "transaction",
+      "timestamp": "2026-02-25T08:55:00.000Z",
+      "meta": {
+        "amountInr": 410000,
+        "note": "second hop"
+      }
+    },
+    {
+      "id": "E114",
+      "source": "P031",
+      "target": "L04",
+      "type": "co-location",
+      "timestamp": "2026-02-25T09:55:00.000Z",
+      "meta": {
+        "visits": 4
+      }
+    },
+    {
+      "id": "E115",
+      "source": "P031",
+      "target": "L09",
+      "type": "co-location",
+      "timestamp": "2026-02-22T16:34:00.000Z",
+      "meta": {
+        "visits": 3
+      }
+    },
+    {
+      "id": "E116",
+      "source": "P032",
+      "target": "P017",
+      "type": "call",
+      "timestamp": "2026-02-21T12:27:00.000Z",
+      "meta": {
+        "durationSec": 400,
+        "note": "compliance cover"
+      }
+    },
+    {
+      "id": "E117",
+      "source": "P032",
+      "target": "P012",
+      "type": "call",
+      "timestamp": "2026-02-21T13:27:00.000Z",
+      "meta": {
+        "durationSec": 220
+      }
+    },
+    {
+      "id": "E118",
+      "source": "P032",
+      "target": "P020",
+      "type": "call",
+      "timestamp": "2026-02-21T15:27:00.000Z",
+      "meta": {
+        "durationSec": 310
+      }
+    },
+    {
+      "id": "E119",
+      "source": "P032",
+      "target": "P023",
+      "type": "call",
+      "timestamp": "2026-02-22T10:34:00.000Z",
+      "meta": {
+        "durationSec": 280
+      }
+    },
+    {
+      "id": "E120",
+      "source": "P032",
+      "target": "O07",
+      "type": "transaction",
+      "timestamp": "2026-02-26T11:02:00.000Z",
+      "meta": {
+        "amountInr": 900000,
+        "note": "legal retainer"
+      }
+    },
+    {
+      "id": "E121",
+      "source": "P032",
+      "target": "O04",
+      "type": "transaction",
+      "timestamp": "2026-02-26T12:02:00.000Z",
+      "meta": {
+        "amountInr": 275000,
+        "note": "disbursement"
+      }
+    },
+    {
+      "id": "E122",
+      "source": "P032",
+      "target": "L07",
+      "type": "co-location",
+      "timestamp": "2026-02-26T14:02:00.000Z",
+      "meta": {
+        "visits": 3
+      }
+    },
+    {
+      "id": "E123",
+      "source": "P032",
+      "target": "P030",
+      "type": "call",
+      "timestamp": "2026-02-27T08:09:00.000Z",
+      "meta": {
+        "durationSec": 900,
+        "note": "strategy"
+      }
+    },
+    {
+      "id": "E124",
+      "source": "P006",
+      "target": "PH99",
+      "type": "call",
+      "timestamp": "2026-02-22T01:34:00.000Z",
+      "meta": {
+        "durationSec": 40,
+        "note": "borrowed burner"
+      }
+    },
+    {
+      "id": "E125",
+      "source": "P020",
+      "target": "PH99",
+      "type": "call",
+      "timestamp": "2026-02-22T02:34:00.000Z",
+      "meta": {
+        "durationSec": 55,
+        "note": "borrowed burner"
+      }
+    },
+    {
+      "id": "E126",
+      "source": "P025",
+      "target": "PH99",
+      "type": "call",
+      "timestamp": "2026-02-23T23:41:00.000Z",
+      "meta": {
+        "durationSec": 30
+      }
+    },
+    {
+      "id": "E127",
+      "source": "P008",
+      "target": "L99",
+      "type": "co-location",
+      "timestamp": "2026-02-23T02:41:00.000Z",
+      "meta": {
+        "visits": 2
+      }
+    },
+    {
+      "id": "E128",
+      "source": "P003",
+      "target": "L99",
+      "type": "co-location",
+      "timestamp": "2026-02-23T02:41:00.000Z",
+      "meta": {
+        "visits": 2
+      }
+    },
+    {
+      "id": "E129",
+      "source": "P025",
+      "target": "L99",
+      "type": "co-location",
+      "timestamp": "2026-02-23T03:41:00.000Z",
+      "meta": {
+        "visits": 1
+      }
+    },
+    {
+      "id": "E130",
+      "source": "P001",
+      "target": "L09",
+      "type": "co-location",
+      "timestamp": "2026-02-22T16:34:00.000Z",
+      "meta": {
+        "visits": 2
+      }
+    },
+    {
+      "id": "E131",
+      "source": "P010",
+      "target": "L09",
+      "type": "co-location",
+      "timestamp": "2026-02-22T16:34:00.000Z",
+      "meta": {
+        "visits": 2
+      }
+    },
+    {
+      "id": "E132",
+      "source": "P020",
+      "target": "L09",
+      "type": "co-location",
+      "timestamp": "2026-02-22T16:34:00.000Z",
+      "meta": {
+        "visits": 2
+      }
+    }
+  ],
+  "auditSeed": [
+    {
+      "timestamp": "2026-03-02T04:12:11.000Z",
+      "actor": "Inv. A. Chauhan",
+      "action": "CASE_OPEN",
+      "detail": "Opened synthetic case GS-DEMO-2026-041 Operation Tide Ledger"
+    },
+    {
+      "timestamp": "2026-03-02T04:18:44.000Z",
+      "actor": "Inv. A. Chauhan",
+      "action": "SEARCH",
+      "detail": "Entity search: Karan Sethi"
+    },
+    {
+      "timestamp": "2026-03-02T04:19:02.000Z",
+      "actor": "Inv. A. Chauhan",
+      "action": "NODE_VIEW",
+      "detail": "Inspected P030 Karan Sethi"
+    },
+    {
+      "timestamp": "2026-03-02T04:27:19.000Z",
+      "actor": "Inv. R. Dasgupta",
+      "action": "SEARCH",
+      "detail": "Entity search: Lotus Exchange"
+    },
+    {
+      "timestamp": "2026-03-02T04:31:55.000Z",
+      "actor": "Inv. R. Dasgupta",
+      "action": "NODE_VIEW",
+      "detail": "Inspected O03 Lotus Exchange Pvt Ltd"
+    },
+    {
+      "timestamp": "2026-03-02T05:02:08.000Z",
+      "actor": "Inv. A. Chauhan",
+      "action": "COMMUNITY_TOGGLE",
+      "detail": "Enabled Louvain community coloring"
+    },
+    {
+      "timestamp": "2026-03-02T05:11:40.000Z",
+      "actor": "Inv. A. Chauhan",
+      "action": "NODE_VIEW",
+      "detail": "Inspected PH99 shared burner"
+    },
+    {
+      "timestamp": "2026-03-02T06:44:12.000Z",
+      "actor": "Inv. R. Dasgupta",
+      "action": "EXPORT",
+      "detail": "Exported neighborhood of P030 (redacted synthetic)"
+    },
+    {
+      "timestamp": "2026-03-02T07:15:33.000Z",
+      "actor": "Supervisor M. Iyer",
+      "action": "REVIEW",
+      "detail": "Supervisor review of flagged bridge actors"
+    },
+    {
+      "timestamp": "2026-03-02T08:03:01.000Z",
+      "actor": "Inv. A. Chauhan",
+      "action": "SEARCH",
+      "detail": "Entity search: Silent Jetty"
+    }
+  ]
+}
