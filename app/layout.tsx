@@ -1,49 +1,38 @@
-import { Analytics } from '@vercel/analytics/next'
-import type { Metadata, Viewport } from 'next'
-import './globals.css'
+import { IBM_Plex_Mono, IBM_Plex_Sans } from "next/font/google";
+import type { Metadata } from "next";
+import { AuditBootstrap } from "@/components/AuditBootstrap";
+import { SiteHeader } from "@/components/SiteHeader";
+import "./globals.css";
+
+const plexSans = IBM_Plex_Sans({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+  variable: "--font-ibm-plex-sans",
+});
+
+const plexMono = IBM_Plex_Mono({
+  subsets: ["latin"],
+  weight: ["400", "500"],
+  variable: "--font-ibm-plex-mono",
+});
 
 export const metadata: Metadata = {
-  title: 'v0 App',
-  description: 'Created with v0',
-  generator: 'v0.app',
-  icons: {
-    icon: [
-      {
-        url: '/icon-light-32x32.png',
-        media: '(prefers-color-scheme: light)',
-      },
-      {
-        url: '/icon-dark-32x32.png',
-        media: '(prefers-color-scheme: dark)',
-      },
-      {
-        url: '/icon.svg',
-        type: 'image/svg+xml',
-      },
-    ],
-    apple: '/apple-icon.png',
-  },
-}
+  title: "GraphSentry — Criminal Network Intelligence",
+  description:
+    "AI-powered criminal network analysis dashboard. Synthetic Smart India Hackathon prototype — not real persons or investigations.",
+};
 
-export const viewport: Viewport = {
-  colorScheme: 'light dark',
-  themeColor: [
-    { media: '(prefers-color-scheme: light)', color: 'white' },
-    { media: '(prefers-color-scheme: dark)', color: 'black' },
-  ],
-}
-
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode
-}>) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
-      <body className="antialiased">
-        {children}
-        {process.env.NODE_ENV === 'production' && <Analytics />}
+    <html lang="en" className={`${plexSans.variable} ${plexMono.variable}`}>
+      <body className="font-sans antialiased">
+        <AuditBootstrap>
+          <div className="min-h-screen bg-ink-900 bg-radial-fade">
+            <SiteHeader />
+            {children}
+          </div>
+        </AuditBootstrap>
       </body>
     </html>
-  )
+  );
 }
