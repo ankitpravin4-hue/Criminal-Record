@@ -2,7 +2,6 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Shield } from "lucide-react";
 
 const links = [
   { href: "/", label: "Briefing" },
@@ -19,9 +18,24 @@ export function SiteHeader() {
     <header className="sticky top-0 z-40 border-b border-slate-800/80 bg-ink-900/85 backdrop-blur-md">
       <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-3">
         <Link href="/" className="flex items-center gap-2.5">
-          <span className="flex h-8 w-8 items-center justify-center rounded-lg border border-cyan-400/30 bg-cyan-400/10 text-accent-cyan">
-            <Shield size={16} />
-          </span>
+          <svg
+            viewBox="0 0 220 220"
+            width="40"
+            height="40"
+            className="h-10 w-10 shrink-0"
+            aria-hidden
+          >
+            <rect fill="#efe9dc" stroke="#c9c0aa" strokeWidth="1.5" x="20" y="20" width="180" height="180" rx="2" />
+            <path
+              stroke="#2c2a24"
+              fill="none"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="4"
+              d="M46,112 L56,98 L64,124 L72,96 L80,112 Q80,86 108,86 Q140,86 140,110 Q140,132 116,132 Q92,132 92,114 Q92,100 108,100 Q120,100 124,110 L150,112"
+            />
+            <line stroke="#efe9dc" fill="none" strokeLinecap="butt" strokeWidth="7" x1="82" y1="106" x2="90" y2="118" />
+          </svg>
           <span className="leading-tight">
             <span className="block text-sm font-semibold tracking-wide text-slate-100">GraphSentry</span>
             <span className="block font-mono text-[10px] uppercase tracking-[0.18em] text-slate-500">

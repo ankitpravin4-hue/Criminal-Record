@@ -1,13 +1,23 @@
 import Link from "next/link";
-import { ArrowRight, Check, LockKeyhole, ScanSearch, ShieldCheck, TimerReset } from "lucide-react";
+import { ArrowRight, ShieldCheck } from "lucide-react";
 import { BriefingGraph } from "@/components/BriefingGraph";
 import { DisclaimerBanner } from "@/components/DisclaimerBanner";
 
-const pipeline = [
-  { step: "01", label: "Ingest", detail: "CDRs · FIRs · ledgers", value: "12.4k records", icon: ScanSearch },
-  { step: "02", label: "Resolve", detail: "Entity + relation extraction", value: "98.7% confidence", icon: Check },
-  { step: "03", label: "Analyze", detail: "Centrality · communities · rules", value: "6 cells found", icon: TimerReset },
-  { step: "04", label: "Prove", detail: "Tamper-evident investigator trail", value: "0 gaps detected", icon: LockKeyhole },
+const funnel = [
+  { label: "Raw records", count: 1240 },
+  { label: "Extracted entities", count: 340 },
+  { label: "Mapped relationships", count: 58 },
+  { label: "Flagged for review", count: 12 },
+];
+
+const funnelMax = Math.max(...funnel.map((stage) => stage.count));
+
+const activityLog = [
+  "[14:31:02] Entity resolved: Karan Sethi (P030) — consultant / broker",
+  "[14:31:08] Relation mapped: P030 → O03  transaction  INR 7,50,000",
+  "[14:31:14] Community detect: 3 clusters + 2 bridge actors",
+  "[14:31:21] Flag raised: BRIDGE_3PLUS on P030",
+  "[14:31:27] Audit seal: AUD-011 hashed to chain",
 ];
 
 export default function LandingPage() {
@@ -56,22 +66,53 @@ export default function LandingPage() {
 
       <section className="border-b border-slate-800/80 bg-ink-850/40">
         <div className="mx-auto max-w-6xl px-4 py-12 sm:px-6 lg:py-16">
-          <div className="mb-8 flex items-end justify-between gap-6">
-            <div><p className="font-mono text-[10px] uppercase tracking-[0.2em] text-cyan-300">Evidence pipeline</p><h2 className="mt-2 text-2xl font-semibold tracking-tight text-slate-100">From raw signal to defensible insight.</h2></div>
-            <p className="hidden max-w-xs text-right text-xs leading-5 text-slate-500 sm:block">A deterministic path from ingestion to an auditable investigator decision.</p>
+          <p className="mb-3 font-mono text-[10px] uppercase tracking-[0.16em] text-slate-500">
+            Evidence pipeline · ingest → extract → map → flag
+          </p>
+          <div className="rounded-lg border border-slate-800 bg-ink-900 px-4 py-4 sm:px-5 sm:py-5">
+            <div className="space-y-3.5">
+              {funnel.map((stage, index) => {
+                const widthPct = Math.max((stage.count / funnelMax) * 100, 1.6);
+                return (
+                  <div key={stage.label} className="flex flex-col gap-1.5 sm:flex-row sm:items-center sm:gap-4">
+                    <div className="flex min-w-0 items-baseline justify-between gap-3 sm:w-52 sm:shrink-0 sm:flex-col sm:justify-center sm:gap-0.5">
+                      <span className="text-xs text-slate-300">{stage.label}</span>
+                      <span className="font-mono text-sm tabular-nums text-slate-100 sm:text-[13px]">
+                        {stage.count.toLocaleString("en-US")}
+                      </span>
+                    </div>
+                    <div className="h-2.5 min-w-0 flex-1 overflow-hidden rounded-sm bg-slate-800/90">
+                      <div
+                        className="h-full rounded-sm bg-cyan-400/90"
+                        style={{ width: `${widthPct}%`, opacity: 1 - index * 0.14 }}
+                      />
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
           </div>
-          <div className="grid gap-px overflow-hidden rounded-lg border border-slate-800 bg-slate-800 md:grid-cols-4">
-            {pipeline.map((item, index) => {
-              const Icon = item.icon;
-              return <article key={item.step} className="relative bg-ink-900 p-5 transition hover:bg-[#111a2b]">
-                {index < pipeline.length - 1 && <span className="absolute right-0 top-8 hidden h-px w-5 bg-cyan-400/50 md:block" />}
-                <div className="flex items-center justify-between"><span className="font-mono text-xs text-slate-600">{item.step}</span><Icon size={16} className="text-cyan-300" /></div>
-                <h3 className="mt-8 text-base font-semibold text-slate-100">{item.label}</h3>
-                <p className="mt-2 min-h-10 text-xs leading-5 text-slate-500">{item.detail}</p>
-                <p className="mt-5 border-t border-slate-800 pt-3 font-mono text-[10px] uppercase tracking-[0.12em] text-amber-200">{item.value}</p>
-              </article>;
-            })}
+
+          <div className="mt-4 overflow-hidden rounded-lg border border-slate-800 bg-[#05070d]">
+            <div className="border-b border-slate-800/90 px-4 py-1.5 font-mono text-[10px] uppercase tracking-[0.16em] text-slate-600">
+              activity log · live
+            </div>
+            <div className="space-y-1 px-4 py-3 font-mono text-[11px] leading-6 text-emerald-200/80 sm:text-xs">
+              {activityLog.map((line, index) => (
+                <p key={line} className="break-words">
+                  {line}
+                  {index === activityLog.length - 1 && (
+                    <span
+                      aria-hidden
+                      className="ml-0.5 inline-block h-[13px] w-[7px] translate-y-[2px] bg-emerald-300 align-baseline"
+                      style={{ animation: "gsBlink 1s step-end infinite" }}
+                    />
+                  )}
+                </p>
+              ))}
+            </div>
           </div>
+          <style>{`@keyframes gsBlink { 50% { opacity: 0; } }`}</style>
         </div>
       </section>
 
