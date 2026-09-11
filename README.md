@@ -1,26 +1,33 @@
-# GraphSentry
+# graphsentry-v0-live
 
-AI-powered criminal network analysis dashboard — a **Smart India Hackathon prototype**.
+This is a [Next.js](https://nextjs.org) project bootstrapped with [v0](https://v0.app).
 
-All names, phones, locations and organisations are **synthetic fiction**. This is not a real investigation and must never be populated with real personal or surveillance data.
+## Built with v0
 
-## Run
+This repository is linked to a [v0](https://v0.app) project. You can continue developing by visiting the link below -- start new chats to make changes, and v0 will push commits directly to this repo. Every merge to `main` will automatically deploy.
+
+[Continue working on v0 →](https://v0.app/chat/projects/prj_kQ8sO7YTbmN86GtJzOd8FyIfGUZF)
+
+## Getting Started
+
+First, run the development server:
 
 ```bash
-npm install
-npm run generate-seed   # regenerates src/data/network.json
 npm run dev
+# or
+yarn dev
+# or
+pnpm dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000).
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-## Demo path for judges (≈2 minutes)
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-1. **Briefing** (`/`) — problem, tagline, four-step pipeline.
-2. **Live graph** (`/dashboard`) — click **Karan Sethi** in Top influencers. Toggle **Community clusters**.
-3. **Audit trail** (`/audit`) — Verify integrity (green). Simulate tamper (red). Rebuild chain.
-4. **Architecture** (`/about`) — demo substitutes vs production (NLP, Neo4j, GNN, Hyperledger Fabric).
+## Learn More
 
-## Stack
+To learn more, take a look at the following resources:
 
-Next.js 14 (App Router) · TypeScript · Tailwind · react-force-graph-2d · graphology · Zustand · Web Crypto SHA-256
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- [v0 Documentation](https://v0.app/docs) - learn about v0 and how to use it.
