@@ -1,10 +1,11 @@
 import { redirect } from "next/navigation";
 
-export default function LiveGraphAliasPage({
+export default async function LiveGraphAliasPage({
   searchParams,
 }: {
-  searchParams: { case?: string };
+  searchParams: Promise<{ case?: string }>;
 }) {
-  const query = searchParams.case ? `?case=${encodeURIComponent(searchParams.case)}` : "";
+  const params = await searchParams;
+  const query = params.case ? `?case=${encodeURIComponent(params.case)}` : "";
   redirect(`/dashboard${query}`);
 }

@@ -1,9 +1,10 @@
 import { DashboardView } from "@/components/DashboardView";
 
-export default function DashboardPage({
+export default async function DashboardPage({
   searchParams,
 }: {
-  searchParams: { case?: string };
+  searchParams: Promise<{ case?: string }>;
 }) {
-  return <DashboardView initialCaseId={searchParams.case} />;
+  const params = await searchParams;
+  return <DashboardView initialCaseId={params.case} />;
 }
